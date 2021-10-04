@@ -12,12 +12,14 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
+import { GoalComponent } from './goal/goal.component';
 
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    GoalComponent
   ],
   imports: [
     MatSliderModule,
