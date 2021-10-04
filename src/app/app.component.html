@@ -97,7 +97,7 @@
   <hr>
   <ul>
       <li *ngFor='let goal of goals'>
-        {{goal.name}}
+        <b>Name: </b>{{goal.name}} <b>id number:</b>{{goal.id}}
       </li>
   </ul>
   <p *ngIf = 'goals.length > 5'>Your goals are too many</p>
