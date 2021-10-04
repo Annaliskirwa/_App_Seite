@@ -34,3 +34,10 @@ section {
   justify-content: center;
   width: 120px;
 }
+
+
+:host {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
