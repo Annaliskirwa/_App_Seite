@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
-import { MatRadioGroup } from '@angular/material/radio';
 
 
 
@@ -26,7 +25,6 @@ import { MatRadioGroup } from '@angular/material/radio';
     MatIconModule,
     FormsModule, 
     MatRadioModule,
-    MatRadioGroup,
     MatFormFieldModule,
     MatSelectModule,
     AppRoutingModule,
