@@ -13,13 +13,15 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { MatSelectModule } from '@angular/material/select';
 import {MatRadioModule} from '@angular/material/radio';
 import { GoalComponent } from './goal/goal.component';
+import { GoalDetailComponent } from './goal-detail/goal-detail.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    GoalComponent
+    GoalComponent,
+    GoalDetailComponent
   ],
   imports: [
     MatSliderModule,
