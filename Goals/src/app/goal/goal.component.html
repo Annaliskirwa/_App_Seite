@@ -3,6 +3,7 @@
    <ul>
      <li *ngFor = 'let goal of goals'>
        {{goal.name}}
+       <app-goal-detail [goal] = 'goal'></app-goal-detail>
      </li>
    </ul>
    <p *ngIf = 'goals.length > 5'>Your goals for today are too many</p>
