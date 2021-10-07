@@ -2,5 +2,9 @@
 
 <div>
   <h1>My Goals</h1>
-  <p> My goal fo rtoday is {{goal}}</p>
+ <ul>
+   <li *ngFor = 'let goal of goals'>
+     {{goal}}
+   </li>
+ </ul>
 </div>
