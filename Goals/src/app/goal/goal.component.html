@@ -1,9 +1,10 @@
 <div>
     <h1>My Goals</h1>
    <ul>
-     <li *ngFor = 'let goal of goals'>
+     <li *ngFor = 'let goal of goals; let i = index'>
        {{goal.name}}
-       <app-goal-detail [goal] = 'goal'></app-goal-detail>
+       <button (click)='toggleDetails(i)'>Toogle Details</button>
+       <app-goal-detail *ngIf = 'goal.showDescription'[goal] = 'goal'></app-goal-detail>
      </li>
    </ul>
    <p *ngIf = 'goals.length > 5'>Your goals for today are too many</p>
