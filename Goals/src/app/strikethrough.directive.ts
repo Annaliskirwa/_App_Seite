@@ -6,7 +6,7 @@ import { Directive, ElementRef} from '@angular/core';
 export class StrikethroughDirective {
 
   constructor(private elem:ElementRef) { 
-    this.elem.nativeElement.style.textDecoration = 'linethrough';
+    this.elem.nativeElement.style.textDecoration = 'line-through';
   }
 
 }
