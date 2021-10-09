@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 import { Goal } from '../goal';
-import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+
 
 @Component({
   selector: 'app-goal',
   templateUrl: './goal.component.html',
-  styleUrls: ['./goal.component.css']
+  styles: ['h6 {color: red}']
 })
 export class GoalComponent implements OnInit {
   goals:Goal[] = [
