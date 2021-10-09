@@ -18,11 +18,11 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
     StrikethroughDirective,
     DateCountPipe,
     GoalFormComponent,
-    FormsModule,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

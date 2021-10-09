@@ -7,11 +7,11 @@ import { Goal } from '../goal';
   styleUrls: ['./goal-form.component.css']
 })
 export class GoalFormComponent implements OnInit {
-  newGoal = new Goal(0,"","",new Date());
 
+  newGoal = new Goal(0,"","",new Date());
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
