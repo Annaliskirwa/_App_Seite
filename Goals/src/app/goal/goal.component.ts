@@ -14,7 +14,7 @@ export class GoalComponent implements OnInit {
 
   goals:Goal[];
   alertService: AlertService;
-  quote: Quote;
+  quote:Quote;
 
   addNewGoal(goal: any){
     let goalLength = this.goals.length;
@@ -42,10 +42,17 @@ export class GoalComponent implements OnInit {
     this.alertService = alertService;
   }
 
-  ngOnInit(): void {
+  ngOnInit() {
+
     interface ApiResponse{
       author:string;
       quote:string;
+    }
+
+    this.http.get<ApiResponse>("http://quotes.stormconsultancy.co.uk/random.json").subscribe(data=>{
+      // Succesful API request
+      this.quote = new Quote(data.author, data.quote)
+    })
   }
 
 }
