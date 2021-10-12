@@ -43,6 +43,9 @@ export class GoalComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    interface ApiResponse{
+      author:string;
+      quote:string;
   }
 
 }
