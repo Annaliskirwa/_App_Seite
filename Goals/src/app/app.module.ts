@@ -24,8 +24,7 @@ import { GoalFormComponent } from './goal-form/goal-form.component';
     AppRoutingModule,
     FormsModule
   ],
-  //Registering a service In the @NgModule() decorator
-  providers: [GoalService],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

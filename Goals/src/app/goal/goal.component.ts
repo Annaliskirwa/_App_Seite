@@ -6,8 +6,6 @@ import { Goal } from '../goal';
   selector: 'app-goal',
   templateUrl: './goal.component.html',
   styleUrls: ['./goal.component.css'],
-  //Registering a service In the @component() metadata
-  providers: [GoalService]
 })
 export class GoalComponent implements OnInit {
   addNewGoal(goal: any){
