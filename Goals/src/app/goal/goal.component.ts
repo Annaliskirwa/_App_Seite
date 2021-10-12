@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Goal } from '../goal';
+import { GoalService } from '../goal-service/goal.service';
 
 
 @Component({
@@ -8,6 +9,9 @@ import { Goal } from '../goal';
   styleUrls: ['./goal.component.css'],
 })
 export class GoalComponent implements OnInit {
+
+  goals:Goal[];
+
   addNewGoal(goal: any){
     let goalLength = this.goals.length;
     goal.id = goalLength+1;
@@ -28,7 +32,9 @@ export class GoalComponent implements OnInit {
       }
     }
   }
-  constructor() { }
+  constructor(goalService:GoalService) { 
+    this.goals = goalService.getGoals()
+  }
 
   ngOnInit(): void {
   }
