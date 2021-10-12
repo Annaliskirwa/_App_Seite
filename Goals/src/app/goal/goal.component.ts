@@ -2,7 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { Goal } from '../goal';
 import { GoalService } from '../goal-service/goal.service';
 import { AlertService } from '../alert-service/alert.service';
-
+import { HttpClient } from '@angular/common/http';
+import { Quote } from '../quote-class/quote';
 
 @Component({
   selector: 'app-goal',
