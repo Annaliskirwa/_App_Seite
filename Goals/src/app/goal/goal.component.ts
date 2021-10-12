@@ -14,7 +14,7 @@ export class GoalComponent implements OnInit {
 
   goals:Goal[];
   alertService: AlertService;
-  quote:Quote;
+  quote!:Quote;
 
   addNewGoal(goal: any){
     let goalLength = this.goals.length;
