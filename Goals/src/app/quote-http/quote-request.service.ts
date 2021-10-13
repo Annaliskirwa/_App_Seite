@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import {environment } from '../../environments/environment';
 import { Quote } from '../quote-class/quote';
+import { SelectControlValueAccessor } from '@angular/forms';
 
 
 @Injectable({
@@ -23,7 +24,7 @@ export class QuoteRequestService {
         this.quote.quote = response.quote
         this.quote.author = response.author
 
-        resolve()
+        resolve(SelectControlValueAccessor)
       },
       error=>{
         this.quote.quote = "Never, never, never give up"
