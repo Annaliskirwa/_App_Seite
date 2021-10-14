@@ -11,10 +11,10 @@ export class GoalService {
     return Goals
   }
 
-  getGoal(id:any){
+  getGoal(id:number):void{
     for (let goal of Goals){
       if (goal.id == id){
-        return goal;
+        return ;
       }
     }
   }
