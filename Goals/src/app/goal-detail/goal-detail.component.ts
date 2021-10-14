@@ -10,7 +10,7 @@ import { GoalService } from '../goal-service/goal.service';
 })
 export class GoalDetailComponent implements OnInit {
 
-  goal!:Goal;
+  goal:Goal;
 
   constructor(private route:ActivatedRoute, private service:GoalService) { }
 
@@ -18,6 +18,5 @@ export class GoalDetailComponent implements OnInit {
     let id = this.route.snapshot.paramMap.get('id');
     this.goal = this.service.getGoal(id)
   }
-
 
 }

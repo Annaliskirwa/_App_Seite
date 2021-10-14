@@ -8,7 +8,7 @@ import { Goals } from '../goalList';
 export class GoalService {
 
   getGoals(){
-    return Goal
+    return Goals
   }
 
   getGoal(id:any){
