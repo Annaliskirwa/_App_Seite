@@ -1,4 +1,5 @@
 import { Injectable } from '@angular/core';
+import { identity } from 'rxjs';
 import { Goal } from '../goal';
 import { Goals } from '../goalList';
 
@@ -11,13 +12,15 @@ export class GoalService {
     return Goals
   }
 
-  getGoal(id:number):void{
+  getGoal(id:any){
     for (let goal of Goals){
-      if (goal.id == id){
-        return ;
+      if (goal.id == goal.id){
+        return goal.id
       }
     }
+    return Goals
   }
+
 
   constructor() { }
 }
